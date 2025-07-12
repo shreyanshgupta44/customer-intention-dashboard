@@ -1,1 +1,6 @@
-"streamlit\npandas\nscikit-learn\nmatplotlib\nseaborn\nxgboost" 
+streamlit
+pandas
+scikit-learn
+matplotlib
+seaborn
+xgboost
