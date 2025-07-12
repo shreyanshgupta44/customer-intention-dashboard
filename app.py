@@ -55,3 +55,13 @@ if st.button("Predict"):
         st.success("✅ This customer is **likely to make a purchase.**")
     else:
         st.error("❌ This customer is **unlikely to make a purchase.**")
+
+
+
+st.write("⚠️ Model sample predictions for increasing product views:")
+
+for i in range(1, 60):
+    test_input = scaler.transform([[i, month_encoded]])
+    pred = model.predict(test_input)[0]
+    st.write(f"Product Pages: {i} → {'Buy ✅' if pred else 'No ❌'}")
+
