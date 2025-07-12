@@ -58,10 +58,3 @@ if st.button("Predict"):
 
 
 
-st.write("⚠️ Model sample predictions for increasing product views:")
-
-for i in range(1, 60):
-    test_input = scaler.transform([[i, month_encoded]])
-    pred = model.predict(test_input)[0]
-    st.write(f"Product Pages: {i} → {'Buy ✅' if pred else 'No ❌'}")
-
